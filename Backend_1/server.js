@@ -14,12 +14,12 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
 app.listen(8000, () => {
-  console.log("Server Establish at 3000 Port");
+  console.log("Server listening on 3000 Port");
 });
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("Sender");
+  res.send("hello buddy");
 });
 
 app.post("/api/cars", (req, res) => {
